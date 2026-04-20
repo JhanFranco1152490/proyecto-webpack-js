@@ -70,7 +70,9 @@ module.exports = {
                 }
             ]
         }),
-        new Dotenv(),
+        new Dotenv({
+            systemvars: true
+        }),
         new CleanWebpackPlugin()
     ],
     optimization: {
